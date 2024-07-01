@@ -1,0 +1,34 @@
+﻿@model DateFilterViewModel
+
+<form asp-controller="Home" asp-action="ExportToExcel" method="post">
+    <label for="FromDate">From Date:</label>
+    <select id="FromDate" name="FromDate" asp-for="FromDate" asp-items="@GetDateOptions(Model.FromDate)">
+        <!-- Populate options dynamically -->
+    </select>
+
+    <label for="ToDate">To Date:</label>
+    <select id="ToDate" name="ToDate" asp-for="ToDate" asp-items="@GetDateOptions(Model.ToDate)">
+        <!-- Populate options dynamically -->
+    </select>
+
+    <button type="submit">Export to Excel</button>
+</form>
+
+@functions {
+    public List<SelectListItem> GetDateOptions(DateTime selectedDate)
+    {
+        // Example: Generate date options for the last year
+        List<SelectListItem> options = new List<SelectListItem>();
+        for (int i = 0; i <= 365; i++)
+        {
+            DateTime date = DateTime.Today.AddDays(-i);
+            options.Add(new SelectListItem
+                {
+                    Text = date.ToString("yyyy-MM-dd"),
+                    Value = date.ToString("yyyy-MM-dd"),
+                    Selected = (date == selectedDate)
+                });
+        }
+        return options;
+    }
+}
