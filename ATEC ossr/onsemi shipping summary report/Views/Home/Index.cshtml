@@ -1,0 +1,46 @@
+﻿@model DateFilterViewModel
+
+<form asp-controller="Home" asp-action="ExportToExcel" method="post" class="mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <label for="FromDate" class="form-label">From Date:</label>
+            <select id="FromDate" name="FromDate" asp-for="FromDate" class="form-select">
+                @foreach (var option in GetDateOptions(Model.FromDate))
+                {
+                    <option value="@option.Value" selected="@option.Selected">@option.Text</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="ToDate" class="form-label">To Date:</label>
+            <select id="ToDate" name="ToDate" asp-for="ToDate" class="form-select">
+                @foreach (var option in GetDateOptions(Model.ToDate))
+                {
+                    <option value="@option.Value" selected="@option.Selected">@option.Text</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-2 align-self-end">
+            <button type="submit" class="btn btn-primary">Export to Excel</button>
+        </div>
+    </div>
+</form>
+
+@functions {
+    public List<SelectListItem> GetDateOptions(DateTime selectedDate)
+    {
+        // Example: Generate date options for the last year
+        List<SelectListItem> options = new List<SelectListItem>();
+        for (int i = 0; i <= 365; i++)
+        {
+            DateTime date = DateTime.Today.AddDays(-i);
+            options.Add(new SelectListItem
+                {
+                    Text = date.ToString("yyyy-MM-dd"),
+                    Value = date.ToString("yyyy-MM-dd"),
+                    Selected = (date.Date == selectedDate.Date)
+                });
+        }
+        return options;
+    }
+}
