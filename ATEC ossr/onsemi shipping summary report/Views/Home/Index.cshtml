@@ -1,30 +1,62 @@
 ﻿@model DateFilterViewModel
 
-<form asp-controller="Home" asp-action="ExportToExcel" method="post" class="mt-4">
-    <div class="row">
-        <div class="col-md-4">
-            <label for="FromDate" class="form-label">From Date:</label>
-            <select id="FromDate" name="FromDate" asp-for="FromDate" class="form-select">
-                @foreach (var option in GetDateOptions(Model.FromDate))
-                {
-                    <option value="@option.Value" selected="@option.Selected">@option.Text</option>
-                }
-            </select>
+<div class="container">
+    <strong>onsemi Summary shipping Report</strong>
+    <form asp-controller="Home" asp-action="ExportToExcel" method="post" class="mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="FromDate" class="form-label">From Date:</label>
+                <select id="FromDate" name="FromDate" asp-for="FromDate" class="form-select">
+                    @foreach (var option in GetDateOptions(Model.FromDate))
+                    {
+                        <option value="@option.Value" selected="@option.Selected">@option.Text</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="ToDate" class="form-label">To Date:</label>
+                <select id="ToDate" name="ToDate" asp-for="ToDate" class="form-select">
+                    @foreach (var option in GetDateOptions(Model.ToDate))
+                    {
+                        <option value="@option.Value" selected="@option.Selected">@option.Text</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-2 align-self-end">
+                <button type="submit" class="btn btn-primary">Export Shipping Report CycleTime</button>
+            </div>
         </div>
-        <div class="col-md-4">
-            <label for="ToDate" class="form-label">To Date:</label>
-            <select id="ToDate" name="ToDate" asp-for="ToDate" class="form-select">
-                @foreach (var option in GetDateOptions(Model.ToDate))
-                {
-                    <option value="@option.Value" selected="@option.Selected">@option.Text</option>
-                }
-            </select>
+    </form>
+</div>
+
+<div class="container mt-5">
+    <strong>onsemi shipping report</strong>
+    <form asp-controller="Home" asp-action="ExportToExcelSummary" method="post" class="mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="FromDate" class="form-label">From Date:</label>
+                <select id="FromDate" name="FromDate" asp-for="FromDate" class="form-select">
+                    @foreach (var option in GetDateOptions(Model.FromDate))
+                    {
+                        <option value="@option.Value" selected="@option.Selected">@option.Text</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="ToDate" class="form-label">To Date:</label>
+                <select id="ToDate" name="ToDate" asp-for="ToDate" class="form-select">
+                    @foreach (var option in GetDateOptions(Model.ToDate))
+                    {
+                        <option value="@option.Value" selected="@option.Selected">@option.Text</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-2 align-self-end">
+                <button type="submit" class="btn btn-primary">Export Summary Report</button>
+            </div>
         </div>
-        <div class="col-md-2 align-self-end">
-            <button type="submit" class="btn btn-primary">Export to Excel</button>
-        </div>
-    </div>
-</form>
+    </form>
+</div>
 
 @functions {
     public List<SelectListItem> GetDateOptions(DateTime selectedDate)

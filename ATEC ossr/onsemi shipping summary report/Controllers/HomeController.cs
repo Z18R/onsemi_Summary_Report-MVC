@@ -41,8 +41,20 @@ namespace onsemi_shipping_summary_report.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
         [HttpPost]
         public IActionResult ExportToExcel(DateFilterViewModel model)
+        {
+            return ExportData(model, "dbo.sp_ReportDataExport", "ShippingReport");
+        }
+
+        [HttpPost]
+        public IActionResult ExportToExcelSummary(DateFilterViewModel model)
+        {
+            return ExportData(model, "dbo.usp_RPT_Onsemi_Shipped_Lot", "SummaryReport");
+        }
+
+        private IActionResult ExportData(DateFilterViewModel model, string storedProcedureName, string reportType)
         {
             DataTable dataTable = new DataTable();
             string connectionString = _configuration.GetConnectionString("MES_ATEC_Connection");
@@ -53,11 +65,10 @@ namespace onsemi_shipping_summary_report.Controllers
                 {
                     connection.Open();
 
-                    using (SqlCommand command = new SqlCommand("dbo.sp_ReportDataExport", connection))
+                    using (SqlCommand command = new SqlCommand(storedProcedureName, connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
 
-                        // Set parameters from model
                         command.Parameters.AddWithValue("@FromDate", model.FromDate);
                         command.Parameters.AddWithValue("@ToDate", model.ToDate);
 
@@ -80,7 +91,7 @@ namespace onsemi_shipping_summary_report.Controllers
                     package.SaveAs(stream);
                     stream.Position = 0;
 
-                    string excelName = $"Summary-Report{model.FromDate.ToString("yyyyMMdd")}_{model.ToDate.ToString("yyyyMMdd")}.xlsx";
+                    string excelName = $"{reportType}-{model.FromDate:yyyyMMdd}_{model.ToDate:yyyyMMdd}.xlsx";
                     return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", excelName);
                 }
             }
@@ -95,5 +106,6 @@ namespace onsemi_shipping_summary_report.Controllers
                 return StatusCode(500, "An error occurred while exporting data. Please try again later.");
             }
         }
+
     }
 }

@@ -1,0 +1,48 @@
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\onsemi shipping summary report.exe
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\onsemi shipping summary report.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\onsemi shipping summary report.runtimeconfig.json
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\onsemi shipping summary report.pdb
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Azure.Core.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Azure.Identity.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\EPPlus.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\EPPlus.Interfaces.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\EPPlus.System.Drawing.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.Identity.Client.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Logging.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.SqlServer.Server.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\System.Configuration.ConfigurationManager.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\System.Drawing.Common.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\System.Memory.Data.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\System.Runtime.Caching.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\System.Security.Permissions.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\System.Windows.Extensions.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\jc_it\Desktop\onsemi summary report\Program\onsemi_Summary_Report-MVC\ATEC ossr\onsemi shipping summary report\obj\Release\net8.0\PubTmp\Out\onsemi shipping summary report.deps.json
