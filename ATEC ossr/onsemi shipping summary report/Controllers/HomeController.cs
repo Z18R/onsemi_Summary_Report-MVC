@@ -5,8 +5,8 @@ using onsemi_shipping_summary_report.Models;
 using System.Data;
 using System.Diagnostics;
 using System.IO;
-using OfficeOpenXml;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace onsemi_shipping_summary_report.Controllers
 {
@@ -20,9 +20,9 @@ namespace onsemi_shipping_summary_report.Controllers
             _logger = logger;
             _configuration = configuration;
         }
+
         public IActionResult Index()
         {
-            // Populate dropdowns with initial dates or any default values
             var model = new DateFilterViewModel
             {
                 FromDate = new DateTime(2024, 1, 1),
@@ -45,16 +45,18 @@ namespace onsemi_shipping_summary_report.Controllers
         [HttpPost]
         public IActionResult ExportToExcel(DateFilterViewModel model)
         {
-            return ExportData(model, "dbo.sp_ReportDataExport", "ShippingReport");
+            // This is Report1
+            return ExportData(model, "dbo.sp_ReportDataExport", "ShippingReport", true);
         }
 
         [HttpPost]
         public IActionResult ExportToExcelSummary(DateFilterViewModel model)
         {
-            return ExportData(model, "dbo.usp_RPT_Onsemi_Shipped_Lot", "SummaryReport");
+            // This is Report2
+            return ExportData(model, "dbo.usp_RPT_Onsemi_Shipped_Lot", "SummaryReport", false);
         }
 
-        private IActionResult ExportData(DateFilterViewModel model, string storedProcedureName, string reportType)
+        private IActionResult ExportData(DateFilterViewModel model, string storedProcedureName, string reportType, bool isReport1)
         {
             DataTable dataTable = new DataTable();
             string connectionString = _configuration.GetConnectionString("MES_ATEC_Connection");
@@ -79,13 +81,37 @@ namespace onsemi_shipping_summary_report.Controllers
                     }
                 }
 
-                // Set the license context for EPPlus
                 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
                 using (ExcelPackage package = new ExcelPackage())
                 {
                     ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("ExportedData");
                     worksheet.Cells["A1"].LoadFromDataTable(dataTable, true);
+
+                    if (isReport1)
+                    {
+                        int[] dateColumns = { 6, 7, 8, 9, 10 }; // Adjust based on your actual date columns indices
+                        foreach (int colIndex in dateColumns)
+                        {
+                            for (int rowIndex = 2; rowIndex <= dataTable.Rows.Count + 1; rowIndex++)
+                            {
+                                if (double.TryParse(worksheet.Cells[rowIndex, colIndex].Text, out double dateNumber))
+                                {
+                                    DateTime date = DateTime.FromOADate(dateNumber);
+                                    worksheet.Cells[rowIndex, colIndex].Value = date;
+                                    worksheet.Cells[rowIndex, colIndex].Style.Numberformat.Format = "yyyy-MM-dd"; 
+                                }
+                            }
+                            int assyCtColumnIndex = 11; // Adjust to your AssyCT column index
+                            int testCtColumnIndex = 12; // Adjust to your TestCT column index
+                            for (int rowIndex = 2; rowIndex <= dataTable.Rows.Count + 1; rowIndex++)
+                            {
+                                worksheet.Cells[rowIndex, assyCtColumnIndex].Formula = $"G{rowIndex}-F{rowIndex}"; // G - F
+                                worksheet.Cells[rowIndex, testCtColumnIndex].Formula = $"J{rowIndex}-H{rowIndex}"; // J - H
+                            }
+                        }
+               
+                    }
 
                     var stream = new MemoryStream();
                     package.SaveAs(stream);
@@ -106,6 +132,5 @@ namespace onsemi_shipping_summary_report.Controllers
                 return StatusCode(500, "An error occurred while exporting data. Please try again later.");
             }
         }
-
     }
 }

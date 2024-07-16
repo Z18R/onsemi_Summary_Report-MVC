@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jc_it\\Desktop\\onsemi summary report\\Program\\onsemi_Summary_Report-MVC\\ATEC ossr\\onsemi shipping summary report\\onsemi shipping summary report.csproj": {}
+    "C:\\Users\\jc_it\\Desktop\\onsemi shipment\\onsemi_Summary_Report-MVC\\ATEC ossr\\onsemi shipping summary report\\onsemi shipping summary report.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jc_it\\Desktop\\onsemi summary report\\Program\\onsemi_Summary_Report-MVC\\ATEC ossr\\onsemi shipping summary report\\onsemi shipping summary report.csproj": {
+    "C:\\Users\\jc_it\\Desktop\\onsemi shipment\\onsemi_Summary_Report-MVC\\ATEC ossr\\onsemi shipping summary report\\onsemi shipping summary report.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jc_it\\Desktop\\onsemi summary report\\Program\\onsemi_Summary_Report-MVC\\ATEC ossr\\onsemi shipping summary report\\onsemi shipping summary report.csproj",
+        "projectUniqueName": "C:\\Users\\jc_it\\Desktop\\onsemi shipment\\onsemi_Summary_Report-MVC\\ATEC ossr\\onsemi shipping summary report\\onsemi shipping summary report.csproj",
         "projectName": "onsemi shipping summary report",
-        "projectPath": "C:\\Users\\jc_it\\Desktop\\onsemi summary report\\Program\\onsemi_Summary_Report-MVC\\ATEC ossr\\onsemi shipping summary report\\onsemi shipping summary report.csproj",
+        "projectPath": "C:\\Users\\jc_it\\Desktop\\onsemi shipment\\onsemi_Summary_Report-MVC\\ATEC ossr\\onsemi shipping summary report\\onsemi shipping summary report.csproj",
         "packagesPath": "C:\\Users\\jc_it\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jc_it\\Desktop\\onsemi summary report\\Program\\onsemi_Summary_Report-MVC\\ATEC ossr\\onsemi shipping summary report\\obj\\",
+        "outputPath": "C:\\Users\\jc_it\\Desktop\\onsemi shipment\\onsemi_Summary_Report-MVC\\ATEC ossr\\onsemi shipping summary report\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
